@@ -57,10 +57,21 @@ const getUserWithId = function (id) {
  * @return {Promise<{}>} A promise to the user.
  */
 const addUser = function (user) {
-  const userId = Object.keys(users).length + 1;
-  user.id = userId;
-  users[userId] = user;
-  return Promise.resolve(user);
+  const queryString = 'INSERT INTO users(name, email, password) VALUES ($1, $2, $3) RETURNING *'
+  const val1 = user.name;
+  const val2 = user.email;
+  const val3 = user.password;
+
+  return pool
+    .query(queryString, [val1, val2, val3])
+    .then((result) => {
+      console.log(user)
+      return result.rows[0];
+    })
+    .catch((err) => {
+      console.log(err.message);
+      return null;
+    });
 };
 
 /// Reservations
