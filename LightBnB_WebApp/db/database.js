@@ -38,7 +38,17 @@ const getUserWithEmail = function (email) {
  * @return {Promise<{}>} A promise to the user.
  */
 const getUserWithId = function (id) {
-  return Promise.resolve(users[id]);
+  const queryString = 'SELECT * FROM users WHERE id = $1'
+
+  return pool
+    .query(queryString, [id])
+    .then((result) => {
+      return result.rows[0];
+    })
+    .catch((err) => {
+      console.log(err.message);
+      return null;
+    });
 };
 
 /**
