@@ -21,14 +21,14 @@ A simple AirBnB clone made during the Lighthouse Labs Web Development Flex progr
 * Finally, go to `localhost:3000` from within your browser.
 
 ## Images
-![The main page showing four listings.](../images/main.png)
-![The login page, showing a place to input a username and password.](../images/login.png)
-![The "My Reservations" page, showing four reservations made under the user's account.](../images/reservations.png)
-![The "Create Listing" page, showing a place to put in a title, description, bedrooms, bathrooms, and parking spaces, the cost per night, urls for thumbnail and cover images, and the address.](../images/create_listing.png)
-![The search page, showing city, minimum/maximum costs, and minimum rating options to narrow down the results.](../images/search.png)
+![The main page showing four listings.](./images/main.png)
+![The login page, showing a place to input a username and password.](./images/login.png)
+![The "My Reservations" page, showing four reservations made under the user's account.](./images/reservations.png)
+![The "Create Listing" page, showing a place to put in a title, description, bedrooms, bathrooms, and parking spaces, the cost per night, urls for thumbnail and cover images, and the address.](./images/create_listing.png)
+![The search page, showing city, minimum/maximum costs, and minimum rating options to narrow down the results.](./images/search.png)
 
 ## ERD
-![An image of the project's ERD. It shows the following: A green rectangle labelled properties containing a primary key of "id", a foreign key of "owner_id", title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, province, city, postal_code. A blue rectangle labelled as "peropty_reviews", containing a primary key of "id", a foreign key of "guest_id", a foreign key of "property_id", a foreign key of "reservation_id", rating, and message. A pink rectangle labelled as "users", containing a primary key of "id", name, email, and password. An orange rectangle labelled as "reservations" containing a primary key "id", a foreign key "property_id", a foreign key "guest_id", start_date, and end_date.](../images/erd.png)
+![An image of the project's ERD. It shows the following: A green rectangle labelled properties containing a primary key of "id", a foreign key of "owner_id", title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, province, city, postal_code. A blue rectangle labelled as "peropty_reviews", containing a primary key of "id", a foreign key of "guest_id", a foreign key of "property_id", a foreign key of "reservation_id", rating, and message. A pink rectangle labelled as "users", containing a primary key of "id", name, email, and password. An orange rectangle labelled as "reservations" containing a primary key "id", a foreign key "property_id", a foreign key "guest_id", start_date, and end_date.](./images/erd.png)
 
 ## Project Structure
 
