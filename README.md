@@ -1,15 +1,16 @@
 # LightBnB
-A simple AirBnB clone made during the Lighthouse Labs Web Development Flex program to learn about PostgreSQL and database structure.
+A simple AirBnB clone made during the Lighthouse Labs Web Development Flex program to learn about PostgreSQL, SQL queries, database structure, and communication.
 
 ## Features
-* Ability to create an account.
-* Ability to log in and sign out.
+* Ability to create an account, log in, and sign out.
 * Ability to create a new property.
-* Ability to filter search results.
+* Ability to filter searches.
+* Uses query variables to prevent database manipulation.
 
 ## Initial Setup
 * Download the project files.
 * Run `npm install` to install project dependencies.
+* Change `Pool` settings at the top of `database.js` as needed.
 * Start postgres from within the project folder.
 * From within the terminal, run the following commands:
   * `CREATE DATABASE lightbnb`
